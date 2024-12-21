@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen h-screen bg-tertiary`}>
         <div className="flex justify-center items-center h-screen w-screen">
-          <div className="bg-quaternary p-4 w-[600px]">{children}</div>
+          <div className="bg-quaternary p-4 w-[800px] rounded-sm">{children}</div>
         </div>
       </body>
     </html>

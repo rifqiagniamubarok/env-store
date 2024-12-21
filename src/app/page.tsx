@@ -21,8 +21,12 @@ export default async function Home() {
       <div className="mt-2">
         {projects.map((project) => {
           return (
-            <div key={project.id} className="hover:bg-primary hover:text-white p-1.5 cursor-pointer ">
-              <p>{project.name}</p>
+            <div key={project.id}>
+              <Link href={`/detail/${project.id}`}>
+                <div className="hover:bg-primary hover:text-white p-1.5 cursor-pointer ">
+                  <p>{project.name}</p>
+                </div>
+              </Link>
             </div>
           );
         })}

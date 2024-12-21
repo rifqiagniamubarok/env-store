@@ -57,3 +57,17 @@ export const GetAllProject = async () => {
     throw error;
   }
 };
+
+export const getProjectById = async (id: string) => {
+  try {
+    const project = await prisma.project.findUnique({
+      where: {
+        id,
+      },
+    });
+
+    return project;
+  } catch (error) {
+    throw error;
+  }
+};
